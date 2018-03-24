@@ -39,7 +39,9 @@ public class LoginPage extends BasePage{
     public void login(String name, String password){
     	log.info("set input name - "+name);
         inputlogin.sendKeys(name);
+        log.info("set input name - "+name);
         inputPassword.sendKeys(password);
+        log.info("set input name - "+password);
         Select select = new Select(domn);
         btnLogin.click();
     }
